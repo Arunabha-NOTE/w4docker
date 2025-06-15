@@ -122,22 +122,3 @@ Verify that the network is removed:
 ```bash
 docker network ls
 ```
-
-## Key Benefits Demonstrated
-
-Through this exercise, you've experienced:
-
-1.  **Service Discovery:** The `my-web-app` container could communicate with `my-db-service` using its container name, not an IP address.
-2.  **Network Isolation:** Containers on this custom network are isolated from containers on other networks.
-3.  **Simplified Configuration:** No need to manage IP addresses manually; Docker handles DNS resolution automatically.
-
-## Common Use Cases
-
-Custom bridge networks are particularly useful for:
-
-* **Multi-tier applications** (web server + database + cache)
-* **Microservices architectures** where services need to communicate
-* **Development environments** that mirror production setups
-* **Testing scenarios** where you need isolated network segments
-
-This networking approach forms the foundation for more complex container orchestration patterns and is essential for building scalable, maintainable containerized applications.
