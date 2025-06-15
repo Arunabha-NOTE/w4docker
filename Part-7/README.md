@@ -132,21 +132,3 @@ docker volume rm my-data-volume
 ```bash
 docker volume ls
 ```
-
-## Key Benefits of Docker Volumes
-
-1. **Data Persistence:** Data survives container restarts, stops, and removals
-2. **Performance:** Volumes have better I/O performance compared to bind mounts on Docker Desktop
-3. **Portability:** Volumes can be easily backed up, restored, and migrated
-4. **Isolation:** Volume content is isolated from the host filesystem
-5. **Management:** Docker provides commands to manage volume lifecycle
-
-## Common Use Cases
-
-- **Database storage:** Persisting database files across container updates
-- **Application logs:** Storing logs that need to survive container restarts
-- **Shared data:** Sharing data between multiple containers
-- **Configuration files:** Storing configuration that persists across deployments
-- **User uploads:** Persisting user-generated content in web applications
-
-Docker volumes provide a reliable and efficient way to handle persistent data in containerized applications, making them essential for production deployments.
